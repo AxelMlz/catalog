@@ -19,9 +19,9 @@ class Movie extends React.Component {
     componentDidMount(){
 
         const movie = movies[(this.props.match.params.id) - 1]
-
+        console.log(movie)
         this.setState  ({
-            //title : movie.title,
+            title : movie.title,
             director : movie.director,
             stars : movie.stars,
             image : movie.image,
@@ -33,13 +33,14 @@ class Movie extends React.Component {
     render() {
         return (
             <div>
+                <h1>Title : {this.state.title}</h1>
                 <ul> 
 
-                <li>{this.state.title}</li>
-                <li>{this.director}</li>
-                <li>{this.stars}</li>
-                <li>{this.image}</li>
-                <li>{this.description}</li>
+                
+                <li>{this.state.director}</li>
+                <li>{this.state.stars}</li>
+                <img src={this.state.image} alt="movie pictures"/>
+                <li>{this.state.description}</li>
              
                 </ul>
                 <Link to="/">Homepage</Link>
