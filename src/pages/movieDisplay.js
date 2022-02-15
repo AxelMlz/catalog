@@ -4,7 +4,7 @@ import movies from "../movies";
 
 
 class movieDisplay extends React.Component {
-    Constructor(){
+    constructor(){
         super();
 
         this.state = {
