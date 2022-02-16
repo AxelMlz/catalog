@@ -1,7 +1,8 @@
 import React from "react"
 import {Link} from 'react-router-dom';
-import movies from "../movies";
+import movies from "../movies.json";
 import Homepage from "../pages/Homepage"
+import "../Global.css"
 
 
 class Movie extends React.Component {
@@ -33,17 +34,17 @@ class Movie extends React.Component {
     render() {
         return (
             <div>
-                <h1>Title : {this.state.title}</h1>
+                <h1 className="Title">Title : {this.state.title}</h1>
                 <ul> 
 
                 
                 <li>{this.state.director}</li>
-                <li>{this.state.stars}</li>
+                <li className="stars">{this.state.stars}</li>
                 <img src={this.state.image} alt="movie pictures"/>
                 <li>{this.state.description}</li>
              
                 </ul>
-                <Link to="/">Homepage</Link>
+                <Link  className="homepage"to="/">Homepage</Link>
             </div> 
         )
     }

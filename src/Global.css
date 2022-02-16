@@ -1,0 +1,25 @@
+.movieLink{
+    padding: 10px;
+    justify-content: auto;
+}
+li{
+    list-style-type: none;
+    padding-left: 10rem;
+    text-justify: center;
+}
+Link {
+    padding-left:20opx;
+
+}
+img{
+    padding-left:10rem;
+}
+.Title{
+    padding-left: 10rem;
+}
+.hommepage{
+    padding-left:4rem
+}
+.stars{
+    padding-right:2px;
+}

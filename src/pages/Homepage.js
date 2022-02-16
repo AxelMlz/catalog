@@ -1,8 +1,8 @@
 import React from "react"
 import {Link} from 'react-router-dom';
-import movies from "../movies";
+import movies from "../movies.json";
 import Movie from "../pages/Movie"
-import "../Homepage.css"
+import "../Global.css"
 
 class Homepage extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Homepage extends React.Component {
             <h1>Homepage</h1>
             <nav> 
             {movies.map(movie => {
-                return <li className = "movieLink" > <Link to={`../movies/${movie.id}`} component={Movie}>{movie.title}</Link></li>
+                return <li className = "movieLink" > <Link to={`../Movie/${movie.id}`} component={Movie}>{movie.title}</Link></li>
             })}
          
             </nav>
